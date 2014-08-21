@@ -3,6 +3,13 @@
 // example: $main-color: #c4a458;
 $text-color: #222;
 
+$bkg: #f1f1f1;
+$main: rgb(168, 42, 108);
+
+$whitetext: rgba(255, 255, 255, .7);
+$blacktext: rgba(0, 0, 0, .7);
+
+$space: 20px;
 
 /* apply a natural box layout model to all elements */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -21,7 +28,7 @@ button,
 input,
 select,
 textarea {
-    color: $text-color;
+    color: $blacktext;
 }
 
 html {

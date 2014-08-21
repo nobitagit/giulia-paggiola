@@ -12,3 +12,232 @@
 
 /* import the grid system if needed */
 @import "_grid.scss";
+
+//////
+// DEVELOPMNENT ONLY -- remove
+/////
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/* Modernizr custom build
+	
+	-flexbox
+
+*/
+//////
+// THE REAL DEAL 
+/////
+body{
+	background: $bkg;
+	font-family: Geneva, Arial, sans-serif;		
+	// avoid the webfont for small screens
+	@include mq(medium){
+		font-family: 'Roboto', sans-serif;		
+	}
+}
+.other-pages{
+	.everything{
+		border-top: 4px solid $main;
+	}	
+}
+
+.hero{
+	background:transparent url('../i/giulia.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	border-bottom: 4px solid transparentize($main, 0.3);
+	// actual height is set via js
+	@include transition(height .5s);		
+}
+.squared{
+	border: 10px solid $bkg;
+	background: transparentize($main, 0.1);
+	color: $whitetext;
+	text-align: center;
+	box-shadow: 0 0 40px #111;
+	position: relative;
+	// actual height is set via js	
+	@include transition(height .5s);			
+	.hello{
+		width: 100%;		
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex; 
+		flex-direction: column;
+		justify-content: center;		
+	}
+	h1{
+		width: 100%;
+		padding: 0 20%;
+		display: inline-block;
+		text-align: left;
+		font-size: 4em;
+		margin-top: 10%;
+		margin-bottom: 0;
+	}
+	h2{
+		width: 100%;
+		display: inline-block;
+		text-align: left;
+		margin-top: 10px;
+	}	
+	h1, h2{
+		padding: 0 $space;		
+		@include mq(small){
+			padding: 0 10%;
+		}		
+		@include mq(medium){
+			padding: 0 20%;
+		}		
+	}
+}
+.be-social{
+	font-size: 1.5em;
+	text-align: right;
+	padding: $space;
+	span{
+		margin-left: 10px;
+		display: inline-block;
+		position: relative;
+	}	
+}
+.wrapme{
+	width: 95%;
+	max-width: 600px;
+	margin: 0 auto;
+	position: relative;
+	padding: $space;
+}
+.meat-and-potatoes{
+	@extend .wrapme;
+	p{
+		line-height: 1.6em;
+		font-weight: 300;
+	}
+	.bold{
+		font-weight: 400;
+	}
+	a{
+		color: $main;
+		//text-decoration: underline;
+		&:hover{
+			//color: $bkg;
+			//background: $main;
+			text-decoration: underline;			
+		}
+	}
+}
+.know-me{
+	text-align: center;
+}
+.directions{
+	@extend .cf;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	display: inline-block;
+	padding: 0;
+	li{
+		display: inline-block;
+		float: left;
+		margin: 0 $space;
+	}
+}
+.sect-title{
+	font-size: 2em;
+	font-weight: 100;
+	text-align: center;
+	color: rgba(0,0,0, .5);
+}
+.feet{
+	background: #E6E6E6;
+	.giulia-s-name{
+		color: $main;
+		margin-bottom: 0;
+	}
+	.giulia-s-specs{
+		margin-top: 10px;
+	}
+}
+
+.some-facts{
+	@extend .cf;
+	border: 1px solid #ddd;
+	border-radius: 3px;	
+	margin: 40px 0;
+}
+.tab-title{
+	border-bottom: 1px solid #ddd;
+	margin: 10px 0 10px;
+	padding-bottom: 10px;
+	color: $main;
+}
+.listbox{
+	@extend .cf;
+	padding-bottom: 10px;
+}
+.giulia-list{
+	list-style: none;
+	font-size: 20px;
+	list-style: none;
+	font-size: 20px;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	width: 50%;
+	li{
+		margin: 20px 0;
+		font-weight: 300;
+	}
+	&:nth-child(1){
+		float: left;	
+		text-align: right;
+		padding-right: 20px;
+		span{
+			margin-left: 10px;
+		}
+	}
+	&:nth-child(2){
+		float: right;	
+		padding-left: 20px;
+		span{
+			margin-right: 10px;
+		}		
+	}
+}
+
+.logos{
+	@extend .cf;
+	margin: 40px 20px;
+	.logo1, .logo2, .logo3{
+		min-height: 120px;
+		@extend .col-sm-4;
+		img{
+			max-width: 100%;
+			opacity: 0.3;
+			transition: opacity .7s;
+			&:hover{
+				opacity: 0.8;
+			}
+		}
+	}
+	.logo2 img{
+		margin-top: 60px;
+	}
+	.logo3{
+		padding: 0 20px;
+		img{
+			margin-top: 13px;
+		}
+	}
+}
