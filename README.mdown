@@ -1,2 +1,2 @@
-# Starterkit-SCSS
-## A Compass based starter kit
+# Giulia Paggiola personal site
+## A Github repo for giuliapaggiola.com
