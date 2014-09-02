@@ -75,6 +75,9 @@ ul{
 	text-align: center;
 	box-shadow: 0 0 40px #111;
 	position: relative;
+	// Thank you IE :(
+	box-sizing: content-box;
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; 
 	// actual height is set via js	
 	@include transition(height .5s);			
 	.hello{
