@@ -1362,7 +1362,8 @@ ul ul {
   border-top: 4px solid #a82a6c; }
 
 .hero {
-  background: transparent url("../i/giulia.jpg") no-repeat center center fixed;
+  background: transparent url("../i/giulia-1.jpg") no-repeat center center fixed;
+  background: transparent url("../i/giulia-2.jpg") no-repeat center -80px fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
