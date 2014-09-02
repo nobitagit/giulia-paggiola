@@ -1368,6 +1368,9 @@ ul ul {
   -o-background-size: cover;
   background-size: cover;
   border-bottom: 4px solid rgba(168, 42, 108, 0.7);
+  box-sizing: content-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   -webkit-transition: height 0.5s;
   -moz-transition: height 0.5s;
   -o-transition: height 0.5s;

@@ -65,6 +65,9 @@ ul{
 	-o-background-size: cover;
 	background-size: cover;
 	border-bottom: 4px solid transparentize($main, 0.3);
+	// Thank you IE :(
+	box-sizing: content-box;
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; 
 	// actual height is set via js
 	@include transition(height .5s);		
 }
