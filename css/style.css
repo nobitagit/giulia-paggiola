@@ -1509,7 +1509,7 @@ body {
       opacity: 0.3;
       transition: opacity .7s; }
       .logos .logo1 img:hover, .logos .logo2 img:hover, .logos .logo3 img:hover {
-        opacity: 0.8; }
+        opacity: 0.6; }
   .logos .logo2 img {
     margin-top: 60px; }
   .logos .logo3 {
