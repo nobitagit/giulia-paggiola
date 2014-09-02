@@ -1380,6 +1380,9 @@ ul ul {
   text-align: center;
   box-shadow: 0 0 40px #111;
   position: relative;
+  box-sizing: content-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   -webkit-transition: height 0.5s;
   -moz-transition: height 0.5s;
   -o-transition: height 0.5s;
