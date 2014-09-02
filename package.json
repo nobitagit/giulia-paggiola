@@ -1,0 +1,23 @@
+{
+  "name": "GiuliaPaggiola.com",
+  "version": "0.0.1",
+  "description": "Professional Resume of Giulia Paggiola",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nobitagit/giulia-paggiola.git"
+  },
+  "author": "Aurelio Ogliari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nobitagit/giulia-paggiola/issues"
+  },
+  "homepage": "https://github.com/nobitagit/giulia-paggiola",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-gh-pages": "~0.9.1"
+  }
+}
