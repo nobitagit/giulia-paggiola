@@ -1349,6 +1349,14 @@ body {
     body {
       font-family: 'Roboto', sans-serif; } }
 
+ul ul {
+  position: relative;
+  top: -11px; }
+  ul ul li, ul ul p {
+    font-size: 14px;
+    margin: 0;
+    padding: 0; }
+
 .other-pages .everything {
   border-top: 4px solid #a82a6c; }
 
