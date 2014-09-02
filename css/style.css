@@ -1349,9 +1349,10 @@ body {
     body {
       font-family: 'Roboto', sans-serif; } }
 
+ul p {
+  margin: 0.3em; }
 ul ul {
-  position: relative;
-  top: -11px; }
+  position: relative; }
   ul ul li, ul ul p {
     font-size: 14px;
     margin: 0;
@@ -1374,7 +1375,7 @@ ul ul {
 
 .squared {
   border: 10px solid #f1f1f1;
-  background: rgba(168, 42, 108, 0.9);
+  background: rgba(168, 42, 108, 0.94);
   color: rgba(255, 255, 255, 0.7);
   text-align: center;
   box-shadow: 0 0 40px #111;
