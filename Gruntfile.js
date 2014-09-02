@@ -10,6 +10,7 @@ module.exports = function(grunt) {
       },
       src: [
         '*.html',
+        'CNAME',
         'css/**/*',
         'i/**/*',
         'js/**/*'
