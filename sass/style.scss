@@ -118,10 +118,15 @@ ul{
 	font-size: 1.5em;
 	text-align: right;
 	padding: $space;
+	z-index: 20;
+	position: relative;
 	span{
 		margin-left: 10px;
 		display: inline-block;
 		position: relative;
+	}
+	a, a:active, a:visited, a:hover{
+		color: inherit;
 	}	
 }
 .wrapme{

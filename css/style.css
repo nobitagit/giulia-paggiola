@@ -1420,11 +1420,15 @@ ul ul {
 .be-social {
   font-size: 1.5em;
   text-align: right;
-  padding: 20px; }
+  padding: 20px;
+  z-index: 20;
+  position: relative; }
   .be-social span {
     margin-left: 10px;
     display: inline-block;
     position: relative; }
+  .be-social a, .be-social a:active, .be-social a:visited, .be-social a:hover {
+    color: inherit; }
 
 .wrapme, .meat-and-potatoes {
   width: 95%;
