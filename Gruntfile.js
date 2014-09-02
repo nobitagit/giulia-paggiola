@@ -5,9 +5,15 @@ module.exports = function(grunt) {
 
     'gh-pages': {
       options: {
-        base: '/'
+        base: '',
+        message: 'Automatic deploy task'
       },
-      src: ['**']
+      src: [
+        '*.html',
+        'css/**/*',
+        'i/**/*',
+        'js/**/*'
+        ]
     }
   }); 
 
