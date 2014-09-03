@@ -35,4 +35,6 @@
 
 	setSizes();
 
+	console.log("%cHi! Interested in how this site is made? \nCheck out the public source on Github @ https://github.com/nobitagit/giulia-paggiola", "color: blue; font-size: x-large");
+
 })();
