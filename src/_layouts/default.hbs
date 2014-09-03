@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,100,300' rel='stylesheet' type='text/css'>
+		<link href="{{assets}}/css/style.css" rel="stylesheet" type="text/css" />		
+		<!--[if lt IE 9]>
+		    <script src="{{assets}}/js/libs/html5shiv.js"></script>
+		<![endif]-->
+		<title>{{pageTitle}} - Giulia Paggiola</title>
+	</head>
+
+	<body class="{{bodyClasses}}">
+		<div class="everything">
+			{{>body}}
+			{{>footer}}
+		</div>	
+		{{#if loadScripts}}
+		<script type="text/javascript" src="{{assets}}/js/scripts.js"></script>
+		{{/if}}
+		{{>ga}}				
+	</body>
+</html>

@@ -5,35 +5,40 @@ module.exports = function(grunt) {
 
     'gh-pages': {
       options: {
-        base: '',
+        base: 'build',
         message: 'Automatic deploy task'
       },
       src: [
         '*.html',
-        'CNAME',
-        'css/**/*',
-        'i/**/*',
-        'js/**/*'
+        'assets/**/*',
+        'CNAME'        
         ]
     },
     'assemble': {
       options: {
-        assets: 'assets',
-        layoutdir: 'docs/layouts'
-        partials: ['docs/includes/**/*.hbs'],
-        data: ['docs/data/**/*.{json,yml}']
+          layout: 'default.hbs',
+          layoutdir: './src/_layouts/',
+          partials: './src/_partials/**/*.hbs',
+          //data: './*.json',    
+          assets: './build/assets',
+          // flatten the structure so instead of having a nested page (ex. site/layouts/index.html)
+          // we will have site/index.html
+          flatten: true            
       },
-      site: {
-        options: {
-          layout: 'default.hbs'
-        },
-        src: ['templates/site/*.hbs'],
-        dest: './'
+      dist: {
+          options: {
+            //data: ['<%= translationsDir %>/en/**/*.json']
+          },
+          files: {
+              './build/': ['src/*.hbs']
+          }
       }
+    }
   }); 
 
   grunt.loadNpmTasks('grunt-gh-pages');
   grunt.loadNpmTasks('assemble');
 
   grunt.registerTask('deploy', ['gh-pages']);
+  grunt.registerTask('build', ['assemble']);
 };
