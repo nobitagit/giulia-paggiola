@@ -33,11 +33,21 @@ module.exports = function(grunt) {
               './build/': ['src/*.hbs']
           }
       }
-    }
+    },
+    'watch': {
+      handlebars: {
+        files: ['src/**/*.hbs'],
+        tasks: ['assemble'],
+        options: {
+          livereload: true
+        }
+      }
+    }    
   }); 
 
   grunt.loadNpmTasks('grunt-gh-pages');
   grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('deploy', ['gh-pages']);
   grunt.registerTask('build', ['assemble']);
