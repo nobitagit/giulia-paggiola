@@ -1,2 +1,8 @@
 # Giulia Paggiola professional profile site
-## A Github repo for giuliapaggiola.com
+## A Github repo for [giuliapaggiola.com](giuliapaggiola.com)
+
+The website is built with Grunt, Handlebars and Compass.
+
+### Development & deploy
+The site development heavily relies on Grunt task runner.
+All Handlebars templates found in `/src` are processed and built in HTML by [Assemble](http://assemble.io/), while the live site is then updated with [Gh-pages](https://github.com/tschaub/grunt-gh-pages).
