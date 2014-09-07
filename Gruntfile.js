@@ -49,6 +49,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('deploy', ['gh-pages']);
+  // Build 
   grunt.registerTask('build', ['assemble']);
+  // Only update the live site with the already built version
+  grunt.registerTask('update', ['gh-pages']);
+  // Build & update
+  grunt.registerTask('deploy', ['assemble', 'gh-pages']);
+
 };
