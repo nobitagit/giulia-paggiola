@@ -1358,6 +1358,9 @@ ul ul {
     margin: 0;
     padding: 0; }
 
+b {
+  font-weight: 400; }
+
 .esrever {
   unicode-bidi: bidi-override;
   direction: rtl; }
