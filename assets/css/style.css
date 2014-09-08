@@ -1475,11 +1475,16 @@ b {
     float: left;
     margin: 0 20px; }
 
-.sect-title {
+.sect-title, .summary h3 {
   font-size: 2em;
   font-weight: 100;
   text-align: center;
   color: rgba(0, 0, 0, 0.5); }
+
+.summary li {
+  line-height: 1.6em;
+  font-weight: 300;
+  margin: 0.5em 0; }
 
 .feet {
   background: #E6E6E6; }
