@@ -55,5 +55,6 @@ module.exports = function(grunt) {
   grunt.registerTask('update', ['gh-pages']);
   // Build & update
   grunt.registerTask('deploy', ['assemble', 'gh-pages']);
-
+  // don't forget thw watch task is available when developing so the build
+  // automatically executes when the partials are updated
 };
