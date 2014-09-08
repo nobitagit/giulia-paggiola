@@ -3,6 +3,8 @@ module.exports = function(grunt) {
    grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    content : './src/_markdown/',
+
     'gh-pages': {
       options: {
         base: 'build',
@@ -16,9 +18,10 @@ module.exports = function(grunt) {
     },
     'assemble': {
       options: {
+          plugins: [ 'assemble-markdown-data' ],
           layout: 'default.hbs',
           layoutdir: './src/_layouts/',
-          partials: './src/_partials/**/*.hbs',
+          partials: ['./src/_partials/**/*.hbs'],
           //data: './*.json',    
           assets: './build/assets',
           // flatten the structure so instead of having a nested page (ex. site/layouts/index.html)

@@ -190,6 +190,16 @@ b{
 	text-align: center;
 	color: rgba(0,0,0, .5);
 }
+.summary{
+	h3{
+		@extend .sect-title;
+	}
+	li{
+		line-height: 1.6em;
+		font-weight: 300;
+		margin: 0.5em 0;
+	}
+}
 .feet{
 	background: #E6E6E6;
 	.giulia-s-name{
